@@ -2,6 +2,17 @@
     margin:0;
     padding:0;
     line-height:2;
+    scroll-behavior: smooth;
+}
+.navbar::-webkit-scrollbar{
+    width:10px;
+}
+.navbar::-webkit-scrollbar-track{
+    background-color: rgb(197, 192, 192, 0.4);
+}
+.navbar::-webkit-scrollbar-thumb{
+    background-color: rgb(114, 114, 114);
+    border-radius: 5px;
 }
 @media (min-width:800px){
     .hide{
@@ -84,7 +95,7 @@
         left:0;
         width:0;
         height:100%;
-        transition: width 1s;
+        transition: width 500ms ease;
         background-color: beige;
         font-size: 15px;
         z-index:10;
